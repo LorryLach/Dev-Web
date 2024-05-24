@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    background-color: bisque;
+}
+
+div{
+    padding-left: 0.3cm;
+    padding-right: 0.3cm;
+}
+
+div strong{
+    font-size: 2.5rem;
+}
+
+footer{
+    display: grid;
+    background-color: black;
+    color:white;
+    grid-template-columns: repeat(6,1fr);
+}
+
+footer p{
+    grid-column: 6;
+    margin: 0;
+}
+
+.bouton{
+    color:white;
+    justify-content: flex-start;
+}
+
+header {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Calibiri","Arial",sans-serif;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 10px double black;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+header h1{
+    display: flex;
+    align-items: center;
+}
+article h2{
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+article img{
+    padding-right: 3px;
+    border-radius: 30px;
+}
+
+article p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+#navtop{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contenu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contenu_histoire_predateur{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contenu_histoire_predateur p{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contenu_histoire_predateur img{
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+
+}
+
+#contenu_habitat p{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contenu_habitat img{
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+#intro{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+#logo{
+    height: 100px;
+    margin-right: 20px;   
+}
+
+.encadrer-un-contenu{ 
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7.5px;
+    margin-top: 0;
+} 
+
+.encadrer-une-page{
+    border-bottom: 3px double black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.texte{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.debut-histoire{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5px; 
+    }
+    
+    header h1{
+        flex-direction: column;  
+    }
+
+    
+    #navtop{
+        flex-direction: column;
+    }
+
+    #navtop a{ 
+        width: 100%;
+    }
+    
+
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #contenu{
+        grid-template-columns: 1fr;
+    }
+
+    #contenu_histoire_predateur{
+        grid-template-columns: 1fr;
+    }
+
+    #contenu_histoire_predateur p{
+        flex-direction: column;
+    }
+
+    #contenu_habitat{
+        grid-template-columns: 1fr;
+    }
+
+    #contenu_habitat p{
+        flex-direction: column;
+    }
+
+    #contenu_histoire_predateur img{
+        
+        object-fit: contain; 
+    }
+
+    #contenu_habitat img {
+        object-fit: contain; 
+    }
+
+    #animaux{
+        height:150px
+    }
+
+    #paysage{
+        height:150px
+    }
+
+    .debut-histoire{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .debut-histoire img{
+        width: 300px;
+        height: 300px;
+    }
+
+   
+   
+}
